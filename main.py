@@ -72,6 +72,7 @@ try:
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
             event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('color', 'blue')
 
             events.append(event)
 
@@ -82,6 +83,7 @@ try:
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
             event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('color', 'brown')
 
             events.append(event)
 
@@ -92,6 +94,7 @@ try:
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
             event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('color', 'purple')
 
             events.append(event)
 
@@ -102,6 +105,7 @@ try:
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
             event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('color', 'grey')
 
             events.append(event)
 
@@ -112,6 +116,7 @@ try:
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
             event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('color', 'green')
 
             events.append(event)
         print("")
