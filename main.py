@@ -5,6 +5,7 @@ import sys
 from bs4 import BeautifulSoup
 from icalendar import Calendar, Event
 from datetime import datetime
+import uuid
 
 if len(sys.argv) < 2:
     print("Please provide UPRN as argument")
@@ -71,7 +72,7 @@ try:
             event.add('description', BINS_DESCRIPTION["BLUE"])
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
-            event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('uid', uuid.uuid4())
             event.add('color', 'blue')
 
             events.append(event)
@@ -82,7 +83,7 @@ try:
             event.add('description', BINS_DESCRIPTION["BROWN"])
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
-            event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('uid', uuid.uuid4())
             event.add('color', 'brown')
 
             events.append(event)
@@ -93,7 +94,7 @@ try:
             event.add('description', BINS_DESCRIPTION["PURPLE"])
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
-            event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('uid', uuid.uuid4())
             event.add('color', 'purple')
 
             events.append(event)
@@ -104,7 +105,7 @@ try:
             event.add('description', BINS_DESCRIPTION["GREY"])
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
-            event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('uid', uuid.uuid4())
             event.add('color', 'grey')
 
             events.append(event)
@@ -115,7 +116,7 @@ try:
             event.add('description', BINS_DESCRIPTION["GREEN"])
             event.add('dtstart', datetime(datetime.now().year, month, i).date())
             event.add('dtstamp', datetime(datetime.now().year, month, i))
-            event.add('uid', str(datetime.now().year) + str(month) + str(i) + "@glasgowbins")
+            event.add('uid', uuid.uuid4())
             event.add('color', 'green')
 
             events.append(event)
